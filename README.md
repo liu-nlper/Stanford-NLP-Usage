@@ -72,7 +72,7 @@ Linux下运行`lexparser-gui.sh`，Windows下运行`lexpars-gui.bat`。
 
 ## 3. treebanks语料整理
 
-见`GENIA_treebank/README.md`。
+见`treebanks/README.md`。
 
 ## 4. 性能评估
 
