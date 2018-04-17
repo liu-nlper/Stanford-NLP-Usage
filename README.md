@@ -75,7 +75,7 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
 示例命令行:
 
-    # 输出格式为penn个dependency
+    # 输出格式为penn和dependency
     java -mx200m edu.stanford.nlp.parser.lexparser.LexicalizedParser
     -retainTmpSubcategories -originalDependencies -outputFormat
     "penn,typedDependencies" -outputFormatOptions "basicDependencies"
