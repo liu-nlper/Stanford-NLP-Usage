@@ -112,7 +112,7 @@ Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要�
 
 示例命令行:
 
-    # penn格式转dependency格式，其中`-keepPunct`参数是保留标签符号
+    # penn格式转dependency格式，其中`-keepPunct`参数是保留标点符号
     java edu.stanford.nlp.trees.EnglishGrammaticalStructure -treeFile
     file.tree -collapsedTree -CCprocessed -keepPunct
 
