@@ -2,7 +2,7 @@
 
 整理stanford parser的部分使用方法，Stanford Parser版本3.9.1。
 
-**官方使用指南**: `./StanfordDependenciesManual(bookmark).pdf`
+**官方使用指南**: `./StanfordDependenciesManual-bookmark.pdf`
 
 **最新版本下载**: [download](https://nlp.stanford.edu/software/lex-parser.shtml#Download)
 
