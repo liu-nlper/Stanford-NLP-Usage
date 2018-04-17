@@ -36,7 +36,7 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
 官方提供了多种调用方式，并提供了多种编程语言的接口，这里仅整理出其中4种，分别是: `图形界面`、`命令行`、`Java`和`Python`。
 
-**注**: 若对符号化之后的句子进行解析，则在使用Stanford Parser进行句法解析之前，需要对句子中的括号进行处理，处理方式参考: `./scripts/preprocessing.py`。
+**注**: 若对符号化之后的句子进行解析，则在使用Stanford Parser进行句法解析之前，需要对句子中的括号进行处理，处理方式参考: [./scripts/preprocessing.py](./scripts/preprocessing.py)。
 
 #### 1.2.1 图形界面
 
@@ -57,9 +57,9 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
 #### 1.2.4 Python
 
- - **NLTK接口**: 参考脚本`./scripts/python/nltk_stanford_parser_demo.py`。
+ - **NLTK接口**: 参考脚本[./scripts/python/nltk_stanford_parser_demo.py](./scripts/python/nltk_stanford_parser_demo.py)。
 
- - **python调用jar包**: 参考脚本`./scripts/python/stanford_parser_demo.py`。
+ - **python调用jar包**: 参考脚本[./scripts/python/stanford_parser_demo.py](./scripts/python/stanford_parser_demo.py)。
 
 ## 2. 输出格式
 
@@ -69,7 +69,7 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
 **edu.stanford.nlp.parser.lexparser.LexicalizedParser**
 
-若要获取不同格式的输出，则需修改`-ouputFormat`：
+若要获取不同格式的输出，则需修改`-outputFormat`：
 
  - `penn`格式: `-outputFormat "penn"`
  - `dependency`格式: `-outputFormat "typedDependencies"`
@@ -126,7 +126,7 @@ Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要�
 
 #### 3.2.1 PCFG and Factored
 
-参考：`./scripts/python/stanford_parser_trainer.py`。
+参考：[./scripts/python/stanford_parser_trainer.py](./scripts/python/stanford_parser_trainer.py)。
 
 若要使用新训练的模型，则参考1.2.1-1.2.4。
 
@@ -138,7 +138,7 @@ Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要�
 
 ## 4. treebank语料整理
 
-见`./treebanks/README.md`。
+见[./treebanks/README.md](./treebanks/README.md)。
 
 ## 5. 性能评估
 
