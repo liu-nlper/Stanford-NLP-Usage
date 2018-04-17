@@ -16,6 +16,8 @@
 
 Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中英文模型。其中，`Mixed [Chinese|English]`分别是在中文/英文的混合标注语料上训练的模型，`wsj`是在华尔街日报语料上训练的模型，`xinhua`是在中文新华日报语料上训练的模型。
 
+中文模型中，除了`xinhuaFactoredSegmenting.ser.gz`能够直接parse未分词的文本，其余的均需要预先分好词。
+
 关于不同模型的介绍: [PCFG parser](https://nlp.stanford.edu/~manning/papers/unlexicalized-parsing.pdf), [Factored parser](https://nlp.stanford.edu/~manning/papers/lex-parser.pdf)
 
 **表 1.** 中文模型
