@@ -59,7 +59,7 @@ https://nlp.stanford.edu/data/QuestionBank-Stanford.shtml
 
 ### 2.2.2 Sinica Treebank
 
-Sinica提供的繁体中文语料库，共5346个parsed sentences，可通过NLTK接口访问。
+Sinica提供的繁体中文语料库，共5346个parsed sentences，可以通过NLTK接口访问。
 
     $ from nltk.corpus import sinica_treebank
     $ sinica_treebank.parsed_sents()
