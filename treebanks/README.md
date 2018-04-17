@@ -3,12 +3,12 @@
 
 # 1. GENIA treeebank
 
-下载地址: http://www.geniaproject.org/genia-corpus/treebank
+下载地址: [download](https://nlp.stanford.edu/software/lex-parser.shtml#Download)
 
 ## 1.1 目录
 
     .
-    ├──GENIA_treebank_v1_xml/  # GENIA treebank语料原始格式
+    ├──GENIA_treebank_v1_xml/  # GENIA treebank语料原始xml文件
     │  └──xxx.xml              # treebank xml格式文件
     ├──GENIA_tree/             # 处理后的treebank文件
     │  ├──esc_char.map         # 特殊字符映射表
@@ -18,11 +18,11 @@
 
 ## 1.2 xml转ptb
 
-在上述GENIA treebanks下载到GENIA_treebank_v1_xml目录下，并运行以下脚本。
+在上述GENIA treebank下载到GENIA_treebank_v1_xml目录下，并运行以下脚本。
 
     $ python3 xml2ptb.py
 
-运行完成后(~6s)，在`./GENIA_tree/`下生成`GENIA_SP.ptb`和`esc_char.map`两个文件，其中，`GENIA_SP.ptb`即为生成的括号形式的treebank标注语料。
+运行完成后(~6s)，在`./GENIA_tree/`下生成`GENIA_SP.ptb`和`esc_char.map`两个文件，其中，`GENIA_SP.ptb`即为`penn`格式的treebank标注语料。
 
 ## 1.3 语料统计
 

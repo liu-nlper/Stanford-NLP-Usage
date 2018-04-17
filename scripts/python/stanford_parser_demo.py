@@ -47,15 +47,17 @@ class MyStanfordParser(object):
 
     def predict(self, path_model, path_data, path_result_ptb=None, path_result_conll=None):
         """
-        parse sentences
-        注:
-            1. '-tokenized'参数，使用符号化后的句子;
-            2. '-sentences newline'参数，parser one sentence per line
+        parse sentences, penn format
+
         Args:
             path_model: 模型文件路径
             path_data: 待标记文件路径
             path_result_ptb: 结果存放路径
             path_result_conll: 转为conll的路径
+            
+        Notes:
+            1. '-tokenized'参数，若使用该参数，则不再进行符号化，但是要注意括号的处理;
+            2. '-sentences newline'参数，parser one sentence per line
         """
         print('predict...', end='')
         command = 'java -mx%s -Djava.ext.dirs=%s %s -tokenized -retainTmpSubcategories ' + \
@@ -76,15 +78,17 @@ class MyStanfordParser(object):
 
     def predict_dep(self, path_model, path_data, path_result_ptb=None, path_result_conll=None):
         """
-        parse sentences
-        注:
-            1. '-tokenized'参数，使用符号化后的句子;
-            2. '-sentences newline'参数，parser one sentence per line
+        parse sentences, get the dependencies
+
         Args:
             path_model: 模型文件路径
             path_data: 待标记文件路径
             path_result_ptb: 结果存放路径
             path_result_conll: 转为conll的路径
+        
+        Notes:
+            1. '-tokenized'参数，若使用该参数，则不再进行符号化，但是要注意括号的处理;
+            2. '-sentences newline'参数，parser one sentence per line
         """
         print('predict...', end='')
         command = 'java -mx%s -Djava.ext.dirs=%s %s -tokenized -retainTmpSubcategories ' + \

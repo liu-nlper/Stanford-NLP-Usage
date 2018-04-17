@@ -2,19 +2,19 @@
 
 整理stanford parser的部分使用方法，Stanford Parser版本3.9.1。
 
-官方使用指南: `./StanfordDependenciesManual(bookmark).pdf`
+**官方使用指南**: `./StanfordDependenciesManual(bookmark).pdf`
 
-最新版本下载: https://nlp.stanford.edu/software/lex-parser.shtml#Download
+**最新版本下载**: [download](https://nlp.stanford.edu/software/lex-parser.shtml#Download)
 
 ## 1. 使用预训练的模型
 
-**注**: 以下提及的脚本若没有特别指明路径，则都在官方下载的压缩包里了；若是相对路径，则相关脚本存放在`./scripts`目录下。
+**注**: 以下提及的脚本，若没有特别指明路径，则都在官方下载的压缩包里；否则，相关脚本存放在`./scripts`目录下。
 
 ### 1.1 官方提供的模型
 
 Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中英文模型。其中，`Mixed [Chinese|English]`分别是在中文/英文的混合标注语料上训练的模型，`wsj`是在华尔街日报语料上训练的模型，`xinhua`是在中文新华日报语料上训练的模型。
 
-关于不同模型的介绍: [PCFG parser](https://nlp.stanford.edu/~manning/papers/unlexicalized-parsing.pdf), [Factored parser](https://nlp.stanford.edu/~manning/papers/lex-parser.pdf), []()
+关于不同模型的介绍: [PCFG parser](https://nlp.stanford.edu/~manning/papers/unlexicalized-parsing.pdf), [Factored parser](https://nlp.stanford.edu/~manning/papers/lex-parser.pdf)
 
 **表 1.** 中文模型
 
@@ -37,7 +37,7 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 #### 1.2.1 图形界面
 
  - Linux下运行`lexparser-gui.sh`
- - Windows下运行`lexpars-gui.bat`
+ - Windows下运行`lexparser-gui.bat`
 
 #### 1.2.2 命令行
 
