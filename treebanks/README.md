@@ -22,7 +22,7 @@
 
     $ python3 xml2ptb.py
 
-运行完成后(~6s)，在`./GENIA_tree/`下生成`GENIA_SP.ptb`和`esc_char.map`两个文件，其中，`GENIA_SP.ptb`即为`penn`格式的treebank标注语料。
+运行完成后(~6s)，在`./GENIA_tree/`下生成`GENIA_SP.ptb`和`esc_char.map`两个文件，其中，`GENIA_SP.ptb`即为`penn treebank`格式的treebank标注语料。
 
 ## 1.3 语料统计
 

@@ -57,25 +57,85 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
  - **python调用jar包**: 参考脚本`./scripts/python/stanford_parser_demo.py`。
 
-## 2. 重新训练模型
+## 2. 输出格式
 
-### 2.1 命令行
+详细信息参考官方手册`In practice`部分。
+
+### 2.1 penn or dependency format?
+
+**edu.stanford.nlp.parser.lexparser.LexicalizedParser**
+
+若要获取不同格式的输出，则需修改`-ouputFormat`：
+
+ - `penn`格式: `-outputFormat "penn"`
+ - `dependency`格式: `-outputFormat "typedDependencies"`
+ - 同时获取两种格式: `-outputFormat "penn,typedDependencies"`
+
+示例命令行:
+
+    java -mx200m edu.stanford.nlp.parser.lexparser.LexicalizedParser
+    -retainTmpSubcategories -originalDependencies -outputFormat
+    "penn,typedDependencies" -outputFormatOptions "basicDependencies"
+    englishPCFG.ser.gz file.txt
+
+### 2.2 不同格式的dependencies
+
+Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要其他格式的dependencies，则需修改`-outputFormatOptions`选项，可选参数有：
+
+ - `basicDependencies`: Basic dependencies.
+ - `collapsedDependencies`: Collapsed dependencies (not necessarily a tree structure)
+ - `CCPropagatedDependencies`: Collapsed dependencies with propagation of conjunct dependencies (not necessarily a tree structure). **This representation is the default, if no option is specified.**
+ - `treeDependencies`: Collapsed dependencies that preserve a tree structure.
+ - `nonCollapsedDependencies`: Non-collapsed dependencies: basic dependencies as well as the extra ones which do not preserve a tree structure.
+ - `nonCollapsedDependenciesSeparated`: Non-collapsed dependencies where the basic dependencies are separated from the extra ones (by “======”).
+
+### 2.3 penn格式转其他格式
+
+**edu.stanford.nlp.trees.EnglishGrammaticalStructure**
+
+如果已经有了`penn treebank`格式的文件，需要将其转换为`dependency`格式，则可以使用此类。
+
+可选参数:
+
+ - `-basic`: basic dependencies
+ - `-collapsed`: collapsed dependencies (not necessarily a tree structure)
+ - `-CCprocessed`: collapsed dependencies with propagation of conjunct dependencies (not necessarily a tree structure)
+ - `-collapsedTree`: collapsed dependencies that preserve a tree structure
+ - `-nonCollapsed`: non-collapsed dependencies: basic dependencies as well as the extra ones which do not preserve a tree structure
+ - `-conllx`: dependencies printed out in CoNLL X (CoNLL 2006) format
+ - `-originalDependencies`: output the original Stanford Dependencies instead of the new Universal Dependencies.
+
+示例命令行:
+
+    # penn格式转dependency格式，其中`-keepPunct`参数是保留标签符号
+    java edu.stanford.nlp.trees.EnglishGrammaticalStructure -treeFile
+    file.tree -collapsedTree -CCprocessed -keepPunct
+
+## 3. 重新训练模型
+
+### 3.1 命令行
 
 脚本: `lexparser-lang-train-test.sh`，若有treebank标注语料，则可使用该脚本重新训练句法分析模型。
 
-### 2.2 Python
+### 3.2 Python
+
+#### 3.2.1 PCFG and Factored
 
 参考：`./scripts/python/stanford_parser_trainer.py`。
 
 若要使用新训练的模型，则参考1.2.1-1.2.4。
 
-## 3. treebanks语料整理
+#### 3.2.2 RNN
 
-见`treebanks/README.md`。
+TODO...
 
-## 4. 性能评估
+## 4. treebank语料整理
 
-### 4.1 CONLL-U Format
+见`./treebanks/README.md`。
+
+## 5. 性能评估
+
+### 5.1 CONLL-U Format
 
 **CONLL-U Format介绍**: http://universaldependencies.org/docs/format.html
 

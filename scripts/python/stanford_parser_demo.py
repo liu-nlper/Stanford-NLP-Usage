@@ -109,7 +109,7 @@ class MyStanfordParser(object):
 
     def ptb2conll(self, path_ptb, path_conll):
         """
-        ptb转为conll format
+        ptb转为conll format (转为其他格式参考官方手册)
         Args:
             path_result_ptb: 结果存放路径
             path_result_conll: 转为conll的路径
