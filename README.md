@@ -6,9 +6,11 @@
 
 **最新版本下载**: [download](https://nlp.stanford.edu/software/lex-parser.shtml#Download)
 
+**官方整理的FAQ**: [FAQ](https://nlp.stanford.edu/software/parser-faq.html)
+
 ## 1. 使用预训练的模型
 
-**注**: 以下提及的脚本，若没有特别指明路径，则都在官方下载的压缩包里；否则，相关脚本存放在`./scripts`目录下。
+以下提及的脚本，若没有特别指明路径，则都在官方下载的压缩包里；否则，相关脚本存放在`./scripts`目录下。
 
 ### 1.1 官方提供的模型
 
@@ -128,9 +130,11 @@ Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要�
 
 若要使用新训练的模型，则参考1.2.1-1.2.4。
 
+或参考官方FAQ: [Can I train the parser?](https://nlp.stanford.edu/software/parser-faq.html#d)
+
 #### 3.2.2 RNN
 
-TODO...
+官方FAQ: [How do I train the RNN parser?](https://nlp.stanford.edu/software/parser-faq.html#rnn)
 
 ## 4. treebank语料整理
 
