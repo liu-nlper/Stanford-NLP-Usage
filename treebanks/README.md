@@ -3,7 +3,7 @@
 
 # 1. GENIA treeebank
 
-下载地址: [download](https://nlp.stanford.edu/software/lex-parser.shtml#Download)
+下载地址: [download](http://www.geniaproject.org/genia-corpus/treebank)
 
 ## 1.1 目录
 
