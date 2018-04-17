@@ -128,9 +128,9 @@ Stanford Parser的dependencies默认采用`collapsed dependencies`，若需要�
 
 参考：[./scripts/python/stanford_parser_trainer.py](./scripts/python/stanford_parser_trainer.py)。
 
-若要使用新训练的模型，则参考1.2.1-1.2.4。
-
 或参考官方FAQ: [Can I train the parser?](https://nlp.stanford.edu/software/parser-faq.html#d)
+
+若要使用新训练的模型，则参考1.2.1-1.2.4。
 
 #### 3.2.2 RNN
 
