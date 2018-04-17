@@ -1,7 +1,7 @@
 # Treebank Corpus
 
 
-# 1. GENIA treeebanks
+# 1. GENIA treeebank
 
 下载地址: http://www.geniaproject.org/genia-corpus/treebank
 
@@ -55,7 +55,7 @@ https://nlp.stanford.edu/data/QuestionBank-Stanford.shtml
 
 ### 2.2.1 Penn Chinese Treebanks
 
-**not free availabl**: https://verbs.colorado.edu/chinese/
+**not free available**: https://verbs.colorado.edu/chinese/
 
 ### 2.2.2 Sinica Treebanks
 

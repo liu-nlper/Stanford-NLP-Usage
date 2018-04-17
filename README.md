@@ -14,6 +14,8 @@
 
 Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中英文模型。其中，`Mixed [Chinese|English]`分别是在中文/英文的混合标注语料上训练的模型，`wsj`是在华尔街日报语料上训练的模型，`xinhua`是在中文新华日报语料上训练的模型。
 
+关于不同模型的介绍: [PCFG parser](https://nlp.stanford.edu/~manning/papers/unlexicalized-parsing.pdf), [Factored parser](https://nlp.stanford.edu/~manning/papers/lex-parser.pdf), []()
+
 **表 1.** 中文模型
 
 | Corpus | PCFG | Factored | FactoredSegmenting |
@@ -34,7 +36,8 @@ Stanford Parser提供了预训练的模型供使用，表1,2分别列出了中�
 
 #### 1.2.1 图形界面
 
-Linux下运行`lexparser-gui.sh`，Windows下运行`lexpars-gui.bat`。
+ - Linux下运行`lexparser-gui.sh`
+ - Windows下运行`lexpars-gui.bat`
 
 #### 1.2.2 命令行
 
@@ -50,13 +53,9 @@ Linux下运行`lexparser-gui.sh`，Windows下运行`lexpars-gui.bat`。
 
 #### 1.2.4 Python
 
- - 使用NLTK接口
+ - **NLTK接口**: 参考脚本`./scripts/python/nltk_stanford_parser_demo.py`。
 
-参考脚本`./scripts/python/nltk_stanford_parser_demo.py`。
-
- - 使用python调用jar包
-
-参考脚本`./scripts/python/stanford_parser_demo.py`。
+ - **python调用jar包**: 参考脚本`./scripts/python/stanford_parser_demo.py`。
 
 ## 2. 重新训练模型
 
