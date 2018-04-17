@@ -5,7 +5,7 @@
 
 下载地址: [download](http://www.nactem.ac.uk/GENIA/current/GENIA-corpus/Treebank/GENIA_treebank_v1.tar.gz)
 
-## 1.1 目录
+## 1.1 目录结构
 
     .
     ├──GENIA_treebank_v1_xml/  # GENIA treebank语料原始xml文件
