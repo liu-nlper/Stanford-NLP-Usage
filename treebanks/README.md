@@ -3,7 +3,7 @@
 
 # 1. GENIA treeebank
 
-GENIA project官网: http://www.geniaproject.org/
+GENIA Project官网: http://www.geniaproject.org/
 
 GENIA treebank下载地址: [download](http://www.nactem.ac.uk/GENIA/current/GENIA-corpus/Treebank/GENIA_treebank_v1.tar.gz)
 
