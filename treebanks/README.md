@@ -33,7 +33,7 @@ GENIA treebank共标注了18541个句子，转为ptb格式时有111条产生错�
 
 ## 2.1 英文
 
-### 2.1.1 Penn English Treebanks
+### 2.1.1 Penn English Treebank
 
 **not free available**: http://catalog.ldc.upenn.edu/ldc99t42
 
@@ -53,11 +53,11 @@ https://nlp.stanford.edu/data/QuestionBank-Stanford.shtml
 
 ## 2.2 中文
 
-### 2.2.1 Penn Chinese Treebanks
+### 2.2.1 Penn Chinese Treebank
 
 **not free available**: https://verbs.colorado.edu/chinese/
 
-### 2.2.2 Sinica Treebanks
+### 2.2.2 Sinica Treebank
 
 Sinica提供的繁体中文语料库，共5346个parsed sentences，可通过NLTK接口访问。
 
