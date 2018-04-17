@@ -43,13 +43,13 @@ NLTK中包含Penn Treebanks 10%的样本，通过以下接口访问:
     $ treebank.parsed_sents()
     $ len(treebank.parsed_sents())  # 3914
 
-### 2.1.2 American National Corpus
-
-**MASC-CONLL**: http://www.anc.org/data/masc/downloads/data-download/
-
-### 2.1.3 QuestionBank
+### 2.1.2 QuestionBank
 
 https://nlp.stanford.edu/data/QuestionBank-Stanford.shtml
+
+### 2.1.3 Sentiment Treebank
+
+https://nlp.stanford.edu/sentiment/index.html
 
 ## 2.2 中文
 
