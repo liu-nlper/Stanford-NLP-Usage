@@ -10,7 +10,7 @@
     .
     ├──GENIA_treebank_v1_xml/  # GENIA treebank语料原始xml文件
     │  └──xxx.xml              # treebank xml格式文件
-    ├──GENIA_tree/             # 处理后的treebank文件
+    ├──GENIA_treebank/         # 处理后的treebank文件
     │  ├──esc_char.map         # 特殊字符映射表
     │  └──GENIA_SP.ptb         # ptb格式文件
     ├──xml2ptb.py              # xml转ptb格式脚本
