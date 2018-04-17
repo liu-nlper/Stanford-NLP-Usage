@@ -18,7 +18,7 @@
 
 ## 1.2 xml转ptb
 
-在上述GENIA treebank下载到GENIA_treebank_v1_xml目录下，并运行以下脚本。
+在下载的`tar.gz`文件解压到GENIA_treebank_v1_xml目录下，并运行以下脚本。
 
     $ python3 xml2ptb.py
 
